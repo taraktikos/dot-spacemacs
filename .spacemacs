@@ -33,6 +33,7 @@ values."
    '(
      yaml
      html
+     csv
      (clojure :variables clojure-enable-fancify-symbols t)
      ;; remove after fix
      evil-cleverparens
