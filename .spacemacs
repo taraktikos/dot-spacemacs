@@ -34,6 +34,7 @@ values."
      emoji
      ;; go
      ;; haskell
+     dash
      themes-megapack
      javascript
      yaml
@@ -41,7 +42,7 @@ values."
      csv
      (clojure :variables clojure-enable-fancify-symbols t)
      ;; remove after fix
-     evil-cleverparens
+     ;; evil-cleverparens
      (ranger :variables
              ranger-show-preview t)
      restclient
@@ -332,8 +333,9 @@ you should place your code here."
     :ensure t
     :config
     (require 'flycheck-clj-kondo))
-  (spacemacs/toggle-evil-cleverparens-on)
-  (add-hook 'clojure-mode-hook #'evil-cleverparens-mode))
+  ;; (spacemacs/toggle-evil-cleverparens-on)
+  ;; (add-hook 'clojure-mode-hook #'evil-cleverparens-mode)
+  )
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
