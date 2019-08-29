@@ -40,8 +40,9 @@ values."
      html
      csv
      (clojure :variables
-              clojure-enable-fancify-symbols t
-              clojure-enable-clj-refactor t)
+              clojure-enable-sayid t
+              clojure-enable-clj-refactor t
+              clojure-enable-fancify-symbols t)
      ;; remove after fix
      ;; evil-cleverparens
      (ranger :variables
