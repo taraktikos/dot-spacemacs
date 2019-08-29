@@ -41,6 +41,7 @@ values."
      csv
      (clojure :variables
               clojure-enable-sayid t
+              clojure-enable-linters t
               clojure-enable-clj-refactor t
               clojure-enable-fancify-symbols t)
      ;; remove after fix
