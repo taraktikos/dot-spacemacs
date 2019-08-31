@@ -41,7 +41,7 @@ values."
      csv
      (clojure :variables
               clojure-enable-sayid t
-              clojure-enable-linters t
+              clojure-enable-linters 'clj-kondo
               clojure-enable-clj-refactor t
               clojure-enable-fancify-symbols t)
      ;; remove after fix
@@ -74,7 +74,7 @@ values."
    ;; wrapped in a layer. If you need some configuration for these
    ;; packages, then consider creating a layer. You can also put the
    ;; configuration in `dotspacemacs/user-config'.
-   dotspacemacs-additional-packages '(flycheck-clj-kondo)
+   dotspacemacs-additional-packages '()
    ;; A list of packages that cannot be updated.
    dotspacemacs-frozen-packages '()
    ;; A list of packages that will not be installed and loaded.
@@ -332,12 +332,6 @@ layers configuration.
 This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
-  (use-package clojure-mode
-    :ensure t
-    :config
-    (require 'flycheck-clj-kondo))
-  ;; (spacemacs/toggle-evil-cleverparens-on)
-  ;; (add-hook 'clojure-mode-hook #'evil-cleverparens-mode)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
