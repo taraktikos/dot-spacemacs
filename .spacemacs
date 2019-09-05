@@ -31,7 +31,12 @@ values."
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
    '(emoji
-     go
+     lsp
+     ;; Put PATH variables to .zshenv
+     ;; Invoke SPC SPC load-env-vars -> .zshenv
+     (go :variables
+         go-linter 'golangci-lint
+         go-backend 'lsp)
      ;; haskell
      dash
      themes-megapack
